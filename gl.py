@@ -1,8 +1,8 @@
-import glm #pip3 install PyGLM
+import glm #pip install PyGLM
 
 from numpy import array, float32
 
-# pip3 install PyOpenGL
+# pip install PyOpenGL
 from OpenGL.GL import *
 from OpenGL.GL.shaders import compileProgram, compileShader
 
