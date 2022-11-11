@@ -23,14 +23,14 @@ rend = Renderer(screen)
 rend.setShaders(vertex_shader, fragment_shader)
 
 
-rend.target.z = -5
+rend.target.z = -16
 
-face = Model("model.obj", "model.bmp")
+face = Model("heli.obj", "Skull.bmp")
 
-face.position.z -= 5
-face.scale.x = 2
-face.scale.y = 2
-face.scale.z = 2
+face.position.z -= 13
+face.scale.x = 0.1
+face.scale.y = 0.1
+face.scale.z = 0.1
 
 
 rend.scene.append( face )
@@ -55,11 +55,11 @@ while isRunning:
             elif event.key == pygame.K_x:
                 rend.wireframeMode()
             elif event.key == pygame.K_1:
-                rend.setShaders(vertex_shader, toonshader)
+                rend.setShaders(still_shader, toonshader)
             elif event.key == pygame.K_2:
-                rend.setShaders(vertex_shader, funBlue_shader)
+                rend.setShaders(still_shader, funBlue_shader)
             elif event.key == pygame.K_3:
-                rend.setShaders(size_shader, funPink_shader)
+                rend.setShaders(vertex_shader, colorExplotion_shader)
 
     if keys[K_q]:
         if rend.camDistance > 2:
