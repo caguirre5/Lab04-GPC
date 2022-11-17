@@ -233,7 +233,7 @@ class Renderer(object):
 
 
     def render(self):
-        glClearColor(0.2,0.2,0.2, 1)
+        glClearColor(0.22,0.47,0.67, 1)
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
 
         if self.active_shader is not None:
